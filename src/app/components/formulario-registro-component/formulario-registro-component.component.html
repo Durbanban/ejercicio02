@@ -2,45 +2,45 @@
     <h1>Formulario de registro</h1>
 </div>
 
-<form class="container">
-    <mat-form-field appearance="fill">
-        <mat-label>Nombre</mat-label>
-        <input matInput required placeholder="John" [(ngModel)]="inputName">
-    </mat-form-field>
-    <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>Apellidos</mat-label>
-        <input matInput placeholder="Papa" [(ngModel)]="inputApellidos">
-    </mat-form-field>
-    <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>NIF</mat-label>
-        <input matInput placeholder="123456789-X" [(ngModel)]="inputNIF">
-    </mat-form-field>
-    <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>Email</mat-label>
-        <input type="email" matInput placeholder="john-papaso@angular.com" [(ngModel)]="inputEmail">
-    </mat-form-field>
-    <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>Teléfono</mat-label>
-        <input matInput placeholder="600600600" [(ngModel)]="inputTelefono">
-    </mat-form-field>
-    <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>Sexo</mat-label>
-        <mat-select required [(ngModel)]="inputSexo">
-            <mat-option value="Hombre">Hombre</mat-option>
-            <mat-option value="Mujer">Mujer</mat-option>
-            <mat-option value="NSNC">No sabe / No contesta</mat-option>
-        </mat-select>
-    </mat-form-field>
-    <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>¿Cómo nos conoció?</mat-label>
-        <mat-select required [(ngModel)]="inputConocer">
-            <mat-option value="Redes sociales">Redes sociales</mat-option>
-            <mat-option value="Un conocido">Un conocido</mat-option>
-            <mat-option value="StackOverFlow">StackOverFlow</mat-option>
-        </mat-select>
-    </mat-form-field>
-    <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>Textarea</mat-label>
-    </mat-form-field>
-</form> -->
+<mat-form-field appearance="fill">
+    <mat-label>Nombre</mat-label>
+    <input matInput required placeholder="John" [(ngModel)]="inputName">
+</mat-form-field>
+<mat-form-field  appearance="fill">
+    <mat-label>Apellidos</mat-label>
+    <input matInput placeholder="Papa" [(ngModel)]="inputApellidos">
+</mat-form-field>
+<mat-form-field  appearance="fill">
+    <mat-label>NIF</mat-label>
+    <input matInput placeholder="123456789-X" [(ngModel)]="inputNIF">
+</mat-form-field>
+<mat-form-field  appearance="fill">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput placeholder="john-papaso@angular.com" [(ngModel)]="inputEmail">
+</mat-form-field>
+<mat-form-field  appearance="fill">
+    <mat-label>Teléfono</mat-label>
+    <input matInput placeholder="600600600" [(ngModel)]="inputTelefono">
+</mat-form-field>
+<mat-form-field  appearance="fill">
+    <mat-label>Sexo</mat-label>
+    <mat-select required [(ngModel)]="inputSexo">
+        <mat-option value="Hombre">Hombre</mat-option>
+        <mat-option value="Mujer">Mujer</mat-option>
+        <mat-option value="NSNC">No sabe / No contesta</mat-option>
+    </mat-select>
+</mat-form-field>
+<mat-form-field  appearance="fill">
+    <mat-label>¿Cómo nos conoció?</mat-label>
+    <mat-select required [(ngModel)]="inputConocer">
+        <mat-option value="Redes sociales">Redes sociales</mat-option>
+        <mat-option value="Un conocido">Un conocido</mat-option>
+        <mat-option value="StackOverFlow">StackOverFlow</mat-option>
+    </mat-select>
+</mat-form-field>
+<mat-form-field  appearance="fill">
+    <mat-label>Textarea</mat-label>
+</mat-form-field>
+<button (click)="mostrarResultados()">REGISTRARSE</button>
+<p>{{inputApellidos}}</p>
 
